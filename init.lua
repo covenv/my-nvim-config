@@ -1,4 +1,5 @@
 require("config.lazy")
+vim.opt.wrap = false
 vim.cmd.colorscheme "retrobox"
 vim.opt.number = true
 vim.g.loaded_matchparen = true
