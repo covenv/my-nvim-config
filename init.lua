@@ -1,6 +1,5 @@
-require("config.lazy")
-vim.opt.wrap = false
 vim.cmd.colorscheme "retrobox"
+vim.opt.wrap = false
 vim.opt.number = true
 vim.g.loaded_matchparen = true
 vim.opt.tabstop = 4         -- Number of spaces a tab counts for
@@ -15,8 +14,7 @@ vim.g.clipboard = {
     ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
   },
   paste = {
-    ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
-    ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+    ['+'] = function() return vim.fn.getreg('+') end,
+    ['*'] = function() return vim.fn.getreg('*') end,
   },
 }
-
