@@ -1,3 +1,4 @@
+require("config.lazy")
 vim.cmd.colorscheme "retrobox"
 vim.opt.wrap = false
 vim.opt.number = true
