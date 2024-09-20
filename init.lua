@@ -1,5 +1,5 @@
 require("config.lazy")
-vim.cmd.colorscheme "retrobox"
+vim.cmd.colorscheme "ayu"
 vim.api.nvim_set_keymap('n', 'dd', '\"_dd', { noremap = true, silent = true })
 vim.opt.wrap = false
 vim.opt.number = true
