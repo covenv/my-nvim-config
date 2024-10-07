@@ -1,5 +1,6 @@
 require("config.lazy")
-vim.cmd.colorscheme "retrobox"
+vim.opt.mouse = ""
+vim.cmd.colorscheme "catppuccin-mocha"
 vim.api.nvim_set_keymap('n', 'dd', '\"_dd', { noremap = true, silent = true })
 vim.opt.wrap = false
 vim.opt.number = true
